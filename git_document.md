@@ -222,7 +222,7 @@ https://github.com/InternLM/Tutorial/tree/camp4
 
 ![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg3.jpg)
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg4.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg4.png)
 
 ![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg5.jpg)
 
@@ -237,11 +237,11 @@ git checkout -b camp4 origin/camp4
 ```
 如图所示
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg6.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg6.png)
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg7.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg7.png)
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg8.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg8.png)
 
 ### 4.创建分支
 ```bash
@@ -249,7 +249,7 @@ git checkout -b camp4_036 # 自定义一个新的分支
 #分支名字改为你的id分支名称
 ```
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg9.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg9.png)
 
 ### 5.创建自己的介绍文件
 - 将id号改为自己的报名id
@@ -265,12 +265,12 @@ git checkout -b camp4_036 # 自定义一个新的分支
 【本期活动目标】:一起学习，快乐暑假，闯关达人!
 ```
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg10.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg10.png)
 
 示例文件路径
 ./data/Git/task/camp4_id.md
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg11.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg11.png)
 
 ### 6.提交更改分支
 
@@ -279,7 +279,7 @@ git add .
 git commit -m "add git_camp4_036_introduction" # 提交信息记录
 ```
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg12.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg12.png)
 
 ### 7.推送分支到远程仓库
 ```bash
@@ -287,26 +287,26 @@ git push origin camp4_036
 #注意，这里要改为你自己的分支名称
 #大家提交使用英文，避免同步错误
 ```
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg13.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg13.png)
 
 
 <details>
 <summary>第一次推送时需要登录github授权，会出现以下两个提醒，点击去github登录授权即可。</summary>
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg14.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg14.png)
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg15.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg15.png)
 
 </details>
 
 ### 8.检查提交内容
 如图所示，可以看到你的分支已经被推送到远程仓库。
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg16.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg16.png)
 
 
 点击右上角Compare & pull request
 在“Add a title中”输入 "add git_<id>_introduction",将
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg17.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg17.png)
 ```bash
 git_036_introduction # 请统一 git_<id>_introduction 格式,方便审核
 
@@ -316,14 +316,14 @@ git_036_introduction # 请统一 git_<id>_introduction 格式,方便审核
 
 在当前页面下方可以看到内容变更，+号代表在当前行号下增加内容，-号代表在当前行号下删除内容。
 
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg18.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg18.png)
 
 提交后如下
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg19.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg19.png)
 
 ### 9.合并到自己仓库
 在分支中选择自己分支，点击“Merge pull request”即可
-![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg20.jpg)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg20.png)
 
 
 ### 10.作业
