@@ -185,7 +185,7 @@ Git的诞生离不开Linux社区的努力，它是开源的，而且是免费的。它支持多种操作系统，包
 
 如图所示
 
-![alt text]((https://github.com/random-zhou/ailabImage/blob/main/docimg2_.png)
+![alt text](https://github.com/random-zhou/ailabImage/blob/main/docimg2_.png)
 
 ## **Git 四步曲**
 在Git的日常使用中，下面四步曲是常用的流程，尤其是在团队协作环境中。
