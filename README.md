@@ -12,7 +12,7 @@
 | 1        | 破冰活动     | 提交一份自我介绍。                           | 
 | 2        | 实践项目     | 创建并提交一个项目。                     |
 
-任务详细参见 [git_task.md](./git_task.md)。
+任务详细参见 [task.md](./task.md)。
 
 Git 的内容相对简单，但也是最为常用的基础。加油！
 
@@ -119,18 +119,18 @@ Git的诞生离不开Linux社区的努力，它是开源的，而且是免费的
 ## **4. Git 下载配置验证**
 ### **4.1 下载 Git**
 #### Windows
-1. 下载并安装适合您 Windows 版本的安装程序：[下载地址](https://git-scm.com/download/win)
-2. 按照安装向导完成安装。(默认设置安装即可)
-3. 打开终端（win+r→cmd），输入指令 `git --version` 检查是否安装成功。
+- 下载并安装适合您 Windows 版本的安装程序：[下载地址](https://git-scm.com/download/win)
+- 按照安装向导完成安装。(默认设置安装即可)
+- 打开终端（win+r→cmd），输入指令 `git --version` 检查是否安装成功。
 
 #### Linux
-1. 打开终端，输入指令 
+- 打开终端，输入指令 
    ```bash
    sudo apt-get install git #安装 Git。
    sudo apt-get update
    sudo apt-get upgrade
    ```
-2. 输入指令 `git --version` 检查是否安装成功。
+- 输入指令 `git --version` 检查是否安装成功。
 
 ### **4.2 配置 Git**
 
@@ -161,7 +161,7 @@ Git的诞生离不开Linux社区的努力，它是开源的，而且是免费的
    同样，替换 `"Your Name"` 和 `"your.email@example.com"` 为该特定项目中使用的姓名和电子邮件。
 
 
-## **4.3 验证 Git配置**
+### **4.3 验证 Git配置**
 验证这些设置以确保它们被正确应用。
 
 - **查看全局配置**：
@@ -174,15 +174,29 @@ Git的诞生离不开Linux社区的努力，它是开源的，而且是免费的
   git config --local --list
   ```
 
+- **永久保存信息至本地**:
+
+   ```bash
+   #来设置 Git自动记录密码(token)，从而无需在每次 pull 或 push 时输入# 注意:信息会以明文存储在本地，需考虑安全性
+   git config --global credential.helper store
+   ```
+
 - **查看特定配置项**：
   ```bash
   git config user.name
   git config user.email
   ```
 
+
+
 如图所示
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/docimg2_1.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/docimg2_1.png" alt="image">
+</div>
+
+
+
 
 ## **5. Git常用操作**
 
@@ -251,23 +265,31 @@ Git的诞生离不开Linux社区的努力，它是开源的，而且是免费的
 本次学习项目的链接：
 https://github.com/InternLM/Tutorial/tree/camp4
 
-
-![image](https://github.com/random-zhou/ailabImage/blob/main/docimg2.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/docimg2.png" alt="image">
+</div>
 
 ### **6.2 将本项目直接fork到自己的账号下，这样就可以直接在自己的账号下进行修改和提交。**
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/docimg3.jpg)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/docimg3.jpg" alt="image">
+</div>
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/docimg4.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/docimg4.png" alt="image">
+</div>
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/docimg5.jpg)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/docimg5.jpg" alt="image">
+</div>
+
+
 
 ### **6.3 配置git并克隆项目到InternStudio本地**
 
 ```bash
-
-git clone git@github.com:random-zhou/Tutorial.git # 修改为自己fork的仓库，改为上图中你的https仓库的git地址
-#git clone https://github.com/random-zhou/Tutorial.git #将random-zhou改为自己的用户名
+git clone https://github.com/random-zhou/Tutorial.git # 修改为自己fork的仓库，改为上图中你的https仓库的git地址,将random-zhou改为自己的用户名
+#git clone git@github.com:random-zhou/Tutorial.git 
 #git clone https://github.com/InternLM/Tutorial.git
 cd Tutorial/
 git branch -a
@@ -275,21 +297,28 @@ git checkout -b class origin/class
 ```
 如图所示
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image.png" alt="image">
+</div>
 
 ### **6.4 创建分支**
 ```bash
 git checkout -b class_036 # 自定义一个新的分支
-#git checkout -b class_id
-#分支名字改为你的id分支名称
+#git checkout -b class_uid
+#分支名字改为你的uid分支名称
 ```
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-1.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-1.png" alt="image">
+</div>
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-2.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-2.png" alt="image">
+</div>
+
 
 ### **6.5 创建自己的介绍文件**
-- 将id号改为自己的报名id
+- 将id号改为自己的报名uid
 
 ```bash
 【大家可以叫我】:InternLM
@@ -302,12 +331,16 @@ git checkout -b class_036 # 自定义一个新的分支
 【本期活动目标】:一起学习，快乐暑假，闯关达人!
 ```
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-3.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-3.png" alt="image">
+</div>
 
 示例文件路径
 ./icamp4/camp4_id.md
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-4.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-4.png" alt="image">
+</div>
 
 ### **6.6 提交更改分支**
 
@@ -316,7 +349,9 @@ git add .
 git commit -m "add git_camp4_036_introduction" # 提交信息记录
 ```
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-5.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-5.png" alt="image">
+</div>
 
 
 ### **6.7 推送分支到远程仓库**
@@ -326,20 +361,33 @@ git push origin class_036
 #大家提交使用英文，避免同步错误
 ```
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-6.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-6.png" alt="image">
+</div>
 
 
 
 <details>
 <summary>第一次推送时需要登录github授权，会出现以下两个提醒，点击去github登录授权即可。</summary>
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-7.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-7.png" alt="image">
+</div>
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-8.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-8.png" alt="image">
+</div>
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-9.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-9.png" alt="image">
+</div>
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-10.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-10.png" alt="image">
+</div>
+
+
+
 
 验证完成即可
 
@@ -348,16 +396,22 @@ git push origin class_036
 ### **6.8 检查提交内容**
 如图所示，可以看到你的分支已经被推送到远程仓库。
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-11.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-11.png" alt="image">
+</div>
 
 
 点击右上角Compare & pull request
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-12.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-12.png" alt="image">
+</div>
 
 在“Add a title中”输入 "add git_<id>_introduction",将
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-13.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-13.png" alt="image">
+</div>
 
 
 ```bash
@@ -369,25 +423,25 @@ git_036_introduction # 请统一 git_<id>_introduction 格式,方便审核
 
 在当前页面下方可以看到内容变更，+号代表在当前行号下增加内容，-号代表在当前行号下删除内容。
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-14.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-14.png" alt="image">
+</div>
+
 
 
 提交后如下
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-15.png)
+<div align="center">
+    <img src="https://github.com/random-zhou/ailabImage/blob/main/image-15.png" alt="image">
+</div>
 
 
-### **6.9 合并到自己仓库**
-在分支中选择自己分支，点击“Merge pull request”即可
 
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-16.png)
-
-![image](https://github.com/random-zhou/ailabImage/blob/main/image-17.png)
 
 ## **7. 作业**
 - 完成任务1：提交一份自我介绍。
 - 完成任务2：创建并提交一个项目。
-- 详见[git_task.md](./git_task.md)
+- 详见[task.md](./task.md)
 
 ## **8. Git结束语**
 恭喜你完成了Git的学习，接下来可以尝试更多的项目，学习更多的知识。从这里开始，你将步入大模型的世界！
